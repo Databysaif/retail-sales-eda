@@ -1,0 +1,104 @@
+RAW SHAPE: (1465, 16)
+Unique products: 1351 | duplicate product_id rows: 114
+Missing values:
+ rating_count    2
+dtype: int64
+Non-numeric ratings (e.g. '|'): 1 <StringArray>
+['|']
+Length: 1, dtype: str
+Collapsed to one row per product: 1465 -> 1351
+Rows where stated discount differs from price-based discount by >1pt: 0
+CLEAN SHAPE: (1351, 10)
+       discounted_price  actual_price  discount_pct   rating  rating_count
+count           1351.00       1351.00       1351.00  1350.00       1349.00
+mean            3304.80       5691.18         46.69     4.09      17644.49
+std             7173.98      11218.67         21.63     0.30      42145.65
+min               39.00         39.00          0.00     2.00          2.00
+25%              349.00        899.00         31.00     3.90       1106.00
+50%              899.00       1795.00         49.00     4.10       4740.00
+75%             2174.00       4575.00         62.00     4.30      16020.00
+max            77990.00     139900.00         94.00     5.00     426973.00
+
+=== CATEGORIES ===
+                         products  median_price  median_discount  avg_rating  total_ratings        demand  product_share_%  demand_share_%
+main_category                                                                                                                             
+Electronics                   490        1384.0             52.0        4.08     14208406.0  5.662058e+10            36.27           82.11
+Home & Kitchen                448        1199.0             41.5        4.04      2991069.0  6.264336e+09            33.16            9.08
+Computers & Accessories       375         399.0             56.0        4.15      6335177.0  5.955037e+09            27.76            8.64
+Office Products                31         178.0              5.0        4.31       149675.0  4.578673e+07             2.29            0.07
+Musical Instruments             2         638.0             46.0        3.90        88882.0  6.445808e+07             0.15            0.09
+Home Improvement                2         337.0             57.5        4.25         8566.0  2.587190e+06             0.15            0.00
+Car & Motorbike                 1        2339.0             42.0        3.80         1118.0  2.615002e+06             0.07            0.00
+Health & Personal Care          1         899.0             53.0        4.00         3663.0  3.293037e+06             0.07            0.00
+Toys & Games                    1         150.0              0.0        4.30        15867.0  2.380050e+06             0.07            0.00
+
+=== TOP 10 SUB-CATEGORIES BY PRODUCTS ===
+                     products  avg_rating  median_discount    ratings
+sub_category                                                         
+USBCables                 161        4.15             63.0  2221671.0
+Smartphones                68        4.10             25.0  2493269.0
+SmartWatches               62        4.01             75.0  1227958.0
+SmartTelevisions           60        4.21             37.5   686767.0
+In-Ear                     51        3.89             63.0  4012352.0
+RemoteControls             49        3.80             60.0    34485.0
+MixerGrinders              27        4.01             47.0   318321.0
+Mice                       24        4.29             41.5   407289.0
+DryIrons                   24        4.13             39.5   258512.0
+InstantWaterHeaters        23        4.05             50.0   143743.0
+
+=== RATINGS ===
+Mean rating: 4.09 | median: 4.1 | share >=4.0: 74.8% | share <3.5: 3.0%
+Rating std: 0.30
+Lowest-rated main categories:
+ main_category
+Car & Motorbike           3.8
+Musical Instruments       3.9
+Health & Personal Care    4.0
+
+=== DISCOUNTS ===
+Mean discount: 46.7% | median: 49%
+Share of products discounted >=50%: 49.0%
+Share discounted >=70%: 15.6%
+              products  avg_rating  median_ratings
+discount_pct                                      
+0-20               176        4.17          6636.5
+21-40              329        4.13          7241.0
+41-60              469        4.07          3025.0
+61-80              326        4.07          4147.0
+81-100              51        3.97          4426.0
+Correlation discount vs rating: -0.162 | discount vs rating_count: 0.004 | price vs discount: -0.112
+Spearman discount vs rating_count: -0.131 | rating vs rating_count: 0.193
+
+=== PRICE ===
+Median discounted price: Rs 899 | median actual: Rs 1795
+Share of products with discounted price under Rs 500: 37.1%; under Rs 1000: 54.6%
+            products  avg_rating  median_discount  median_ratings
+price_band                                                       
+<200             160        4.04             62.0          3095.0
+200-500          341        4.08             60.0          2685.0
+500-1k           237        4.11             50.0          6183.0
+1k-5k            410        4.07             43.0          7144.0
+>5k              203        4.17             31.0          6753.0
+
+=== CONCENTRATION OF ATTENTION (rating_count) ===
+Top 10% of products hold 61.3% of all ratings
+                                      product_name  rating_count  rating  discounted_price
+AmazonBasics Flexible Premium HDMI Cable (Black, 4      426973.0     4.4             219.0
+Amazon Basics High-Speed HDMI Cable, 6 Feet - Supp      426973.0     4.4             309.0
+Amazon Basics High-Speed HDMI Cable, 6 Feet (2-Pac      426973.0     4.4             309.0
+boAt Bassheads 100 in Ear Wired Earphones with Mic      363713.0     4.1             349.0
+boAt Bassheads 100 in Ear Wired Earphones with Mic      363713.0     4.1             379.0
+
+=== OUTLIERS (IQR x 3) ===
+actual_price outliers: 141 | threshold: 15603
+rating_count outliers: 84 | threshold: 60762
+Highest-priced products:
+                                      product_name  actual_price  discounted_price  discount_pct
+Sony Bravia 164 cm (65 inches) 4K Ultra HD Smart L      139900.0           77990.0            44
+VU 164 cm (65 inches) The GloLED Series 4K Smart L       85000.0           54990.0            35
+LG 139 cm (55 inches) 4K Ultra HD Smart LED TV 55U       79990.0           47990.0            40
+
+Products with rating>=4.3 and above-median rating_count: 231 (17.1%)
+Their median discount: 41%
+
+Saved 8 figures to figures/

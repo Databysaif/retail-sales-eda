@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+.DS_Store
+# raw Kaggle file is not redistributed - download it from Kaggle
+data/amazon.csv
