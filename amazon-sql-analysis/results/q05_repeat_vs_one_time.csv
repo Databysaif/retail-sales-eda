@@ -1,0 +1,3 @@
+customer_type,customers,customer_share_pct,orders,order_share_pct,revenue_inr,revenue_share_pct,avg_spend_per_customer_inr
+Repeat (2+ orders),202,2.2,421,4.5,984149.0,4.2,4872.0
+One-time (1 order),8848,97.8,8848,95.5,22323553.0,95.8,2523.0

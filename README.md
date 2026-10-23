@@ -8,6 +8,7 @@
 |---|---|---|
 | Retail sales EDA: trends by product, region and month | Synthetic (generated) | This page, below |
 | [Amazon sales dataset EDA](amazon-sales-eda/): pricing, discounts, ratings and categories | Real, from Kaggle | [`amazon-sales-eda/`](amazon-sales-eda/) |
+| [SQL analysis of customer orders](amazon-sql-analysis/): revenue, repeat customers and top products, with an Excel summary | Real, from Kaggle (review-based orders) | [`amazon-sql-analysis/`](amazon-sql-analysis/) |
 
 ---
 

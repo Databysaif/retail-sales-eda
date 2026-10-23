@@ -1,0 +1,11 @@
+main_category,sub_category,orders,revenue_inr,avg_order_value_inr
+Electronics,SmartTelevisions,287,6180177.0,21534.0
+Electronics,Smartphones,217,3395869.0,15649.0
+Electronics,SmartWatches,311,791951.0,2546.0
+Home & Kitchen,WaterFilters&Purifiers,96,673464.0,7015.0
+Home & Kitchen,MixerGrinders,216,649020.0,3005.0
+Home & Kitchen,StorageWaterHeaters,96,607040.0,6323.0
+Home & Kitchen,InstantWaterHeaters,178,433306.0,2434.0
+Home & Kitchen,HEPAAirPurifiers,32,381344.0,11917.0
+Home & Kitchen,FanHeaters,146,380656.0,2607.0
+Electronics,In-Ear,352,355030.0,1009.0

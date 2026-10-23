@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+# raw Kaggle file is not redistributed - download it from Kaggle
+data/amazon.csv

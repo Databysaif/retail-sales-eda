@@ -1,0 +1,10 @@
+main_category,orders,customers,revenue_inr,revenue_share_pct,order_share_pct,avg_order_value_inr
+Electronics,2920,2891,12520592.0,53.7,31.5,4288.0
+Home & Kitchen,3513,3480,8126551.0,34.9,37.9,2313.0
+Computers & Accessories,2536,2490,2546658.0,10.9,27.4,1004.0
+Office Products,248,245,74792.0,0.3,2.7,302.0
+Car & Motorbike,8,8,18712.0,0.1,0.1,2339.0
+Musical Instruments,16,16,10208.0,0.0,0.2,638.0
+Home Improvement,16,16,5392.0,0.0,0.2,337.0
+Health & Personal Care,4,4,3596.0,0.0,0.0,899.0
+Toys & Games,8,8,1200.0,0.0,0.1,150.0
