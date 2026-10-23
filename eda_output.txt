@@ -1,0 +1,118 @@
+RAW SHAPE: (12160, 8)
+
+Missing values:
+ order_id        0
+order_date      0
+region        181
+product         0
+category        0
+quantity       97
+unit_price      0
+discount      120
+dtype: int64
+Duplicate rows: 120
+Dropping rows with missing/non-positive quantity: 106
+
+Outlier orders flagged: 25
+Revenue share held by outlier rows: 6.38%
+CLEAN SHAPE: (11909, 13)
+
+TOTAL REVENUE: 22.81 Cr
+
+BY PRODUCT:
+                      revenue    units  rev_share_%  avg_price
+product                                                      
+Smartphone        65906704.9   2433.0         28.9    27088.7
+Laptop            60112612.4   1128.0         26.4    53291.3
+Sofa              17639509.0    761.0          7.7    23179.4
+Headphones        16073522.3   5549.0          7.0     2896.7
+Jeans             15539320.4   8954.0          6.8     1735.5
+Jacket            13725775.7   3155.0          6.0     4350.5
+Mixer Grinder     13222322.7   3591.0          5.8     3682.1
+T-Shirt           11849190.8  17521.0          5.2      676.3
+Rice (5kg)         9698161.9  23932.0          4.3      405.2
+Cooking Oil (1L)   4316749.4  27882.0          1.9      154.8
+
+BY CATEGORY (share %):
+ category
+Electronics    62.3
+Apparel        18.0
+Home           13.5
+Grocery         6.1
+Name: revenue, dtype: float64
+
+BY REGION (share %):
+ region
+North      28.0
+West       26.9
+South      24.5
+East       19.2
+Unknown     1.4
+Name: revenue, dtype: float64
+
+BY MONTH (Cr):
+ month_name
+Jan    1.78
+Feb    1.77
+Mar    1.69
+Apr    1.65
+May    1.71
+Jun    1.66
+Jul    1.67
+Aug    1.75
+Sep    1.53
+Oct    2.46
+Nov    2.77
+Dec    2.35
+Name: revenue, dtype: float64
+Peak month: Nov | Lowest month: Sep | Peak/Low ratio: 1.81x
+Oct+Nov share of annual revenue: 22.9%
+
+Jacket Nov-Jan share of its revenue: 68.2%
+
+DISCOUNT BANDS:
+           orders  avg_qty       revenue  rev_share_%
+discount                                            
+0.00        7154     7.95  1.425331e+08        62.49
+0.05        2445     8.02  4.682449e+07        20.53
+0.10        1763     7.91  3.000947e+07        13.16
+0.20         547     8.12  8.716855e+06         3.82
+Total discount given (Cr): 0.80  (3.4% of gross)
+
+BY WEEKDAY (share %):
+ weekday
+Monday       14.2
+Tuesday      14.8
+Wednesday    14.5
+Thursday     14.4
+Friday       14.1
+Saturday     14.4
+Sunday       13.5
+Name: revenue, dtype: float64
+
+REGION x CATEGORY (Cr):
+ category  Apparel  Electronics  Grocery  Home
+region                                       
+East         0.81         2.72     0.27  0.59
+North        1.14         4.01     0.40  0.84
+South        0.99         3.52     0.34  0.73
+Unknown      0.08         0.17     0.02  0.05
+West         1.10         3.78     0.38  0.87
+
+MoM growth %:
+ month_name
+Jan     NaN
+Feb    -0.7
+Mar    -4.8
+Apr    -2.1
+May     3.6
+Jun    -3.0
+Jul     0.6
+Aug     5.0
+Sep   -12.7
+Oct    60.4
+Nov    12.7
+Dec   -15.2
+Name: revenue, dtype: float64
+
+Saved 7 figures to figures/
